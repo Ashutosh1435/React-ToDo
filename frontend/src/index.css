@@ -1,0 +1,273 @@
+/* Main Document */
+html{
+  font-size: 62.5%; /* 16px * 62.5  = 10px = 1rem */
+  box-sizing: border-box; /* Easy to set order margin an padding*/
+}
+body{
+  margin: 0;
+  height: 100vh; /* view-port height full */
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#root{
+  height: 100%;
+}
+.danger-btn {
+  background: linear-gradient(#ff512f , #dd2476);
+}
+
+h1{
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+h1.center{
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+h2{
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #ff8000;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap; /* This is done to make responsive, if less space wrap one below other */
+  justify-content: space-between;
+  align-items: center;  /* for alligning items vertically center */
+}
+a.brand{
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  align-items: center;
+  margin-left: 5px;
+}
+.brand:hover{
+  color: #ff8000;
+}
+.row.center{
+  justify-content: center; /* for alligning text vertic and horizon center. */
+}
+.row.top{
+  align-items: flex-start;
+}
+.col-1{
+  flex: 1 1 25rem;
+  /* margin: 0 auto; */
+}
+.col-2{
+  flex: 2 1 50rem;
+}
+.min-30{
+  min-width: 30rem;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;  /* remove dots of ul */
+}
+li{
+  margin-top: 1rem;
+}
+input,
+select,
+textarea,
+button{
+  padding: 1rem;
+  background-color: #f7e7e7a4;
+  border-radius: 0.5rem;
+  border: 0.1rem #727070a4 solid;
+  font-size: 1.6rem;
+  font-family:  Helvetica, Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+button{
+  cursor: pointer;
+}
+input:hover,
+select:hover,
+textarea:hover,
+button:hover{
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4a4 solid;
+  font-size: 1.6rem;
+  font-family:  Helvetica, Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+button.small{
+  font-size:1.2rem;
+}
+button.primary{
+  background: linear-gradient(-135deg, #c850c0, #a503e6,#4158d8);
+}
+button.block{
+  width: 100%;
+}
+button:hover{
+  border:0.1rem #404040 solid;
+}
+
+.loading{
+  display: block !important;
+}
+
+/* Table */
+
+.table{
+  width: 90%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.table tbody tr:nth-of-type(odd){
+  background-color: #f4f4f4;
+}
+.table tbody tr:nth-of-type(odd):hover{
+  background-color: white;
+}
+  .table tbody tr:hover{
+    border: 1px solid black;
+}
+.table td, .table th {
+  text-align:left;
+  /* border: 0.1rem solid #e4e4e4; */
+  padding:0.5rem;
+}
+.table button{
+  margin: 0 0.2rem;
+  background: linear-gradient(135deg, #c850c0, #a503e6,#4158d8);
+  color: white;
+}
+.table button:nth-of-type(even):hover{
+  background: linear-gradient(-135deg, #c850c0, #a503e6,#4158d8);
+  color: white;
+}
+.table button:hover{
+  background: linear-gradient(-135deg, #c850c0, #a503e6,#4158d8);
+  color: white;
+}
+
+/* Layout */
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+header{
+  grid-area: header;
+  background: linear-gradient(-135deg, #c850c0, #a503e6,#4158d8);
+  height: 6rem;
+  box-shadow: 5px 5px 5px grey;
+}
+main{
+  grid-area: main;
+  padding: 1rem;
+}
+footer{
+  grid-area: footer;
+  background: linear-gradient(-135deg, #c850c0, #4158d8);
+  color: #ffffff;
+  box-shadow: 5px 5px 5px grey;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  min-height: 75px;
+}
+footer ul{
+  margin: 20;
+  align-items: baseline;
+}
+footer ul li {
+  align-items: center;
+  text-align: center;
+}
+
+/* Dropdown */
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  margin-right: 10px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Forms Section */
+.form{
+  max-width: 60rem;
+  margin: 0 auto;
+}
+/* It means all direct child(div) of the form class not inner. */
+.form > div{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+/* It means all label with in the form class */
+.form label{
+  margin: 1rem ;
+  /* display: block ; */
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  padding: 2rem;
+  border: 0.1rem #c0c0c0 solid;
+  border-radius: 0.5rem;
+  list-style-type: none;
+}
+.form-container li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
