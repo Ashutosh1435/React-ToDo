@@ -11,6 +11,10 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## DOWNLOAD PACKAGES ->
+inside root -- npm install
+inside Task/frontend -- npm install
+
 ## START BACKEND  -> 
 inside root directory -- npm start
 ## START FRONTEND ->
