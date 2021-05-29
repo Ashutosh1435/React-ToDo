@@ -5,11 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Provider} from 'react-redux'
 import store from './store';
-import { toast } from 'react-toastify';
-toast.configure({
-  position: "top-right", autoClose: 3000, hideProgressBar: true,
-  closeOnClick: true, pauseOnHover: true, draggable: true
-});
+
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>

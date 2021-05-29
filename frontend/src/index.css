@@ -139,9 +139,9 @@ button:hover{
 .table tbody tr:nth-of-type(odd):hover{
   background-color: white;
 }
-  .table tbody tr:hover{
-    border: 1px solid black;
-}
+  /* .table tbody tr:hover{
+    border: 0.1px  black;
+} */
 .table td, .table th {
   text-align:left;
   /* border: 0.1rem solid #e4e4e4; */
